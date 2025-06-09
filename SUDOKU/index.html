@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mathematical Sudoku</h1>
+    <div id="timer-container">Time: <span id="timer">00:00:00</span></div>
+    <p>Hover over empty cells to see the hint equation.</p>
+
+    <div class="control-panel">
+        <div class="button-group">
+            <button id="reset-button">New Game / Restart</button>
+            <button id="check-button">Check Solution</button>
+            <button id="start-timer-button">Start Timer</button>
+        </div>
+
+        <div class="difficulty-group">
+            <label>Difficulty:</label>
+            <label><input type="radio" name="difficulty" value="easy" checked> Easy (1 Board)</label>
+            <label><input type="radio" name="difficulty" value="medium"> Medium (2 Boards)</label>
+            <label><input type="radio" name="difficulty" value="hard"> Hard (4 Boards)</label>
+        </div>
+
+        <div class="hint-group">
+             <button id="hint-button">Get Hint</button>
+             <span id="hint-counter">Hints: 3</span>
+        </div>
+    </div>
+
+    <div id="game-area">
+        <!-- Oyun tahtaları buraya JavaScript tarafından eklenecek -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
